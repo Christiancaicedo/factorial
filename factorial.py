@@ -7,7 +7,7 @@
 
 def factorial(number):
     count_number = 0
-    for i in range(1, number+1):
+    for i in range(1, count_number+1):
         number = number *i
         return number
 
