@@ -5,17 +5,21 @@
 
 # create a function that will be a for loop to generate the product for the factorial
 
-def factorial(number):
-    count_number = 0
-    for i in range(1, count_number+1):
-        number = number *i
-        return number
-
-# create a loop that runs through the function to print positon of number and factorial equation
-       
-for i in range(0, 36):
+def factorial(n: int) -> int:
+    """Return n! (0! is 1)."""
+    if n <= 1:
+        return 1
+ 
+    result = 2
+    for x in range(3, n + 1):
+        result *= x
+ 
+    return result
+ 
+ 
+for i in range(36):
     print(i, factorial(i))
-    
+
 #Your results should be:
 # 0 1
 # 1 1
